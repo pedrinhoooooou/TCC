@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+    <link rel="stylesheet" href="jogos.css">
+    <title>Hello, word</title>
+  </head>
+  <body>
+
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn-icon-hader">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </button>
+
+        <div class="logo-header">
+            <img src="tcc-removebg-preview.png" class="imagem-logo" alt="GamerCat">
+        </div>
+        <div class="navigation-header" id="navigation-header">
+            <button onclick="toggleSidebar()" class="btn-icon-hader">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+            </button>
+            <a href="#">Home</a>
+            <a href="#">Noticias</a>
+            <a href="#" class="active"z>Jogos</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Pesquisar">
+                <a href="#" class="search-btn">
+                    <img src="lupa-removebg-preview.png" alt="Lupa" height="20" width="20">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+    
+        <!--minha área de códigos-->
+        
+        <div class="gamercaat">
+            
+            <div class="slider">
+
+                <div class="slides">
+                    <!--radio buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <!--Fim radio buttons-->
+
+                    <!--slide images-->
+                    <div class="slide first">
+                        <img src="The_Last_of_Us_capa.png" alt="imagem 1"/>
+                    </div>
+
+                    <div class="slide second">
+                        <img src="NZVMGYRWD21K1654708972931.jpg" alt="imagem 2"/>
+                    </div>
+
+                    <div class="slide third">
+                        <img src="fifa041022.png" alt="imagem 3">
+                    </div>
+
+                    <div class="slide fourth">
+                        <img src="godofwar_ragnarokdigitaldeluxe.png" alt="imagem 4"/>
+                    </div>
+
+                    <div class="slide fv">
+                        <img src="Stray_BLACK_.png" alt="imagem 5"/>
+                    </div>
+
+                    <div class="slide sixth">
+                        <img src="elden-ring-logo-uhdpaper.com-4K-2.jpg" alt="imagem 6"/>
+                    </div>
+                    <!--Fim slide images-->
+
+                    <!--navigation auto-->
+                    <div class="navegacao-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                    </div>
+                </div> 
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    
+    <script src="jogo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
