@@ -240,3 +240,115 @@ body{
 #radio6:checked ~ .first{
     margin-left: -125%;
 }
+
+#radio7:checked ~ .first{
+    margin-left: -125%;
+}
+
+.container2 {
+    position: relative;
+    padding: 15px;
+    max-width: 850px;
+    margin: 0 auto;
+    
+  }
+
+  .gallery-wrapper {
+    overflow-x: auto;
+  }
+
+.arrow-left, .arrow-right {
+  position: relative;
+  top: -14px;
+  left: 87%;
+  right: auto;
+  font-size: 30px;
+  line-height: 50px;
+  width: 50px;
+  transition: all 600ms ease-in-out;
+  cursor: pointer;
+  border: none;
+  border-radius: 80%;
+}
+
+.arrow-left i{
+    position: relative;
+    top: -4px;
+    left: 0%;
+}
+
+.arrow-right i{
+    position: relative;
+    top: -4px;
+    left: -25%;
+}
+.arrow-left:hover, .arrow-right:hover {
+  background: #ef1e9d;
+
+}
+
+.arrow-right {    
+    text-align: right;
+  }
+
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
+
+  
+ 
+  .item:hover{
+    cursor: pointer;
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+  }
+
+  .item {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .current-item {
+    opacity: 1;
+  }
+
+  /* Isso é da w3schools */
+/* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Ocultar barra de rolagem para Chrome, Safari e Opera */
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  /*Ocultar barra de rolagem para IE, Edge e Firefox */
+.gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .cyan {
+    background: cyan;
+  }
+  
+  .deeppink {
+    background: deeppink;
+  }
+  
+  .turquoise {
+    background: turquoise;
+  }
+  
+  .darkblue {
+    background: darkblue;
+  }
+  
+  .purple {
+    background: purple;
+  }
